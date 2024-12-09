@@ -1,4 +1,5 @@
 import { Button } from "./Button";
+import Image from "next/image";
 
 interface ICardProps {
   heading: string;
@@ -11,7 +12,7 @@ export const Card = (props: ICardProps) => {
   const { heading, paragraph, color, image } = props;
   return (
     <>
-      <div className="text-black  flex flex-col justify-center bg-white w-[304px] h-[388px] rounded-[10px]">
+      <div className="text-black absolute flex flex-col justify-center bg-white w-[304px] h-[388px] rounded-[10px]">
         <div className="flex justify-between">
           <div className="relative flex flex-col gap-1 top-6 left-6">
             <h1 className="text-[#1A202C] font-bold text-xl tracking-[-3%]">
@@ -20,40 +21,53 @@ export const Card = (props: ICardProps) => {
             <p className="text-[#90A3BF] font-bold text-sm">{paragraph}</p>
           </div>
           <div className="flex ">
-            <img
-              className="h-4 w-4 top-[136px] left-[36px] absolute"
+            <Image
+              className="h-4 w-4 top-[136px] left-[36px]"
               src="/icon/heart.svg"
               alt="Product Image"
+              width={16} // Set the width of the image
+              height={16} // Set the height of the image
             />
           </div>
         </div>
 
-        <img className="w-full" src="/car.svg" alt="Product Image" />
+        <Image 
+            className="w-full" 
+            src="/car.svg" 
+            alt="Product Image"
+            width={232}
+            height={72}
+            
+            />
 
         <div>
           <ul className="flex text-[#90A3BF] gap-4 w-64 h-6 ">
             <li className="flex items-center font-medium text-sm leading-[21px] tracking-[-2%]">
-              <img
-                className="w-[24px]"
+              <Image
                 src="/icon/gas-station.svg"
                 alt="Product Image"
+                width={24} // Set the width of the image
+                height={24} // Set the height of the image
               />
               90L
             </li>
             <li className="flex items-center font-medium text-sm leading-[21px] tracking-[-2%]">
-              <img
-                className="w-[24px]"
-                src="/icon/car.svg"
-                alt="Product Image"
-              />
+            <Image
+                  src="/icon/car.svg"
+                  alt="Product Image"
+                  width={24} // Set the width of the image
+                  height={24} // Set the height of the image
+                />
               Manual
             </li>
             <li className="flex items-center font-medium text-sm leading-[21px] tracking-[-2%]">
-              <img
-                className="w-[24px]"
+              <Image
                 src="/icon/profile-2user.svg"
                 alt="Product Image"
+                width={24} // Set the width of the image
+                height={24} // Set the height of the image
               />
+      
               2 People
             </li>
           </ul>
@@ -120,10 +134,12 @@ export const CardHero = (props: ICardHeroProps) => {
 
       {/* Image Section */}
       <div>
-        <img
-          className="absolute w-[406px] h-[116px] top-[234px] left-[137px]"
+        <Image
+          className="absolute top-[234px] left-[137px]"
           src={image}
           alt="Car"
+          width={406}
+          height={116}
         />
       </div>
     </div>

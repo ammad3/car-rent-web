@@ -40,7 +40,7 @@ export default function Home() {
       />
       </div>
       
-      {/* <Card heading="Koenigsegg" paragraph="Sport" image="" /> */}
+      <Card heading="Koenigsegg" paragraph="Sport" image="" />
     </div>
   );
 }

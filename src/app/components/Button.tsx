@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface IButtonProps {
     text?: string;
     bgcolor?: string;
@@ -25,7 +27,13 @@ interface IButtonProps {
     
     return (
       <button className={`${bgcolor} ${positionLeft} w-[60px] h-[60px] px-5 rounded-[4px]  transition-all duration-200`}>
-        <img src="/icon/Swap.svg" alt="" />
+        <Image
+           src="/icon/Swap.svg"
+            alt="swap image"
+            width={24}
+            height={24}
+
+             />
       </button>
     );
   };
