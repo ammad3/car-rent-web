@@ -1,4 +1,4 @@
-import { Card, CardHero } from "./components/Card";
+import { CardHero } from "./components/Card";
 import { RadioNav } from "./components/Radionav";
 import { Button2, Button } from "./components/Button";
 import { PopularCar } from "./components/Popularcar";
