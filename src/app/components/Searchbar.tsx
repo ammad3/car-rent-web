@@ -2,8 +2,8 @@ import React from "react";
 
 const SearchBar: React.FC = () => {
   return (
-    <div className=" flex justify-center items-center py-4">
-      <div className="flex items-center border border-gray-300 rounded-full px-4 py-2 w-full max-w-lg bg-gray-50 shadow-sm">
+    <div className="w-[492px] h-11 flex justify-center items-center py-4">
+      <div className="flex items-center border border-[#C3D4E966] rounded-full px-4 py-2 w-full max-w-lg bg-[#FFFFFF] shadow-sm">
         {/* Search Icon */}
         <div className="text-gray-400 mr-3">
           <svg
@@ -26,7 +26,7 @@ const SearchBar: React.FC = () => {
         <input
           type="text"
           placeholder="Search something here"
-          className="w-[492px] h-[44px] flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-400 text-sm"
+          className=" flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-400 text-sm"
         />
 
         {/* Filter Icon */}

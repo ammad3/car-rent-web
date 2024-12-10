@@ -1,16 +1,18 @@
 import Image from "next/image";
 
 interface IButtonProps {
-    text?: string;
+    text: string;
     bgcolor?: string;
     textColor?: string;
+    btnWidth?: string;
+    btnHeight?: string;
   }
   
   const Button = (props: IButtonProps) => {
-    const { text, bgcolor, textColor } = props;
+    const { text, bgcolor, textColor, btnWidth, btnHeight} = props;
     
     return (
-      <button className={`${bgcolor} ${textColor} w-[116px] h-[44px] px-5 rounded-[4px]  transition-all duration-200`}>
+      <button className={`${bgcolor} ${textColor} ${btnWidth} ${btnHeight} px-5 rounded-[4px] font-semibold text-[16px] leading-6 tracking-[-2%] text-center transition-all duration-200`}>
         {text}
       </button>
     );
@@ -33,10 +35,11 @@ interface IButtonProps {
             width={24}
             height={24}
 
-             />
+          />
       </button>
     );
   };
+  
   
 
   

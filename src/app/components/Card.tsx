@@ -9,20 +9,20 @@ interface ICardProps {
 }
 
 export const Card = (props: ICardProps) => {
-  const { heading, paragraph, color, image } = props;
+  const { heading, paragraph, image } = props;
   return (
     <>
-      <div className="text-black absolute flex flex-col justify-center bg-white w-[304px] h-[388px] rounded-[10px]">
+      <div className="text-black relative flex flex-col justify-center bg-white w-[304px] h-[388px] rounded-[10px]">
         <div className="flex justify-between">
-          <div className="relative flex flex-col gap-1 top-6 left-6">
+          <div className="absolute flex flex-col gap-1 top-6 left-6">
             <h1 className="text-[#1A202C] font-bold text-xl tracking-[-3%]">
               {heading}
             </h1>
             <p className="text-[#90A3BF] font-bold text-sm">{paragraph}</p>
           </div>
-          <div className="flex ">
+          <div className="flex absolute top-[24px] left-[256px] ">
             <Image
-              className="h-4 w-4 top-[136px] left-[36px]"
+              className="h-4 w-4"
               src="/icon/heart.svg"
               alt="Product Image"
               width={16} // Set the width of the image
@@ -30,17 +30,16 @@ export const Card = (props: ICardProps) => {
             />
           </div>
         </div>
-
-        <Image 
-            className="w-full" 
-            src="/car.svg" 
-            alt="Product Image"
-            width={232}
-            height={72}
-            
+        <div className="absolute top-[136px] left-[36px]">
+            <Image
+              src={image}
+              alt="Product Image"
+              width={232}
+              height={72}
+              
             />
-
-        <div>
+        </div>
+        <div className="absolute top-[270px] left-6">
           <ul className="flex text-[#90A3BF] gap-4 w-64 h-6 ">
             <li className="flex items-center font-medium text-sm leading-[21px] tracking-[-2%]">
               <Image
@@ -72,14 +71,22 @@ export const Card = (props: ICardProps) => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="absolute top-[320px] left-6 flex items-center gap-4">
           <span className="text-[#1A202C] font-bold text-xl leading-[21px] tracking-[-2%] ">
             $99.00/
             <span className="text-[#90A3BF] font-bold text-xl leading-[21px] tracking-[-2%] ">
               day
             </span>
           </span>
+          <Button
+          text="Rent Now"
+          textColor="text-[#ffffff]"
+          bgcolor="bg-[#3563E9]"
+          btnWidth="w-[116px]"
+          btnHeight="h-[44px]"
+        />
         </div>
+
       </div>
     </>
   );
@@ -94,6 +101,10 @@ interface ICardHeroProps {
   positionLeft?: string;
   positionTop?: string;
   buttonColor?: string;
+  imgTop?: string;
+  imgLeft?: string;
+  imgWidth?: number;
+  imgHeight?: number;
 }
 
 export const CardHero = (props: ICardHeroProps) => {
@@ -103,14 +114,16 @@ export const CardHero = (props: ICardHeroProps) => {
     color,
     image,
     bgImage,
-    positionTop,
-    positionLeft,
     buttonColor,
+    imgTop,
+    imgLeft,
+    imgWidth,
+    imgHeight,
   } = props;
 
   return (
     <div
-      className={`text-white relative ${positionTop} ${positionLeft} w-[640px] h-[360px] rounded-[10px] flex flex-col`}
+      className={`text-white relative w-[640px] h-[360px] rounded-[10px] flex flex-col`}
       style={{
         background: `${color} url(${bgImage}) no-repeat center/contain`,
       }}
@@ -129,17 +142,19 @@ export const CardHero = (props: ICardHeroProps) => {
           text="Rent Now"
           bgcolor={buttonColor}
           textColor="text-[#ffffff]"
+          btnWidth="w-[116px]"
+          btnHeight="h-[44px]"
         />
       </div>
 
-      {/* Image Section */}
+      {/* Image Section */} 
       <div>
         <Image
-          className="absolute top-[234px] left-[137px]"
+          className={`absolute ${imgTop} ${imgLeft}`}
           src={image}
           alt="Car"
-          width={406}
-          height={116}
+          width={imgWidth}
+          height={imgHeight}
         />
       </div>
     </div>

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="absolute bg-white w-[1440px] border-t border-gray-300 py-8">
+    <footer className="absolute top-[2244px] bg-white w-[1440px] border-t border-gray-300 py-8">
       <div className="container mx-auto px-4 lg:px-0">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-8 lg:space-y-0">
