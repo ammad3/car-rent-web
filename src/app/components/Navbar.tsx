@@ -15,33 +15,33 @@ export default function Navbar() {
         <div className="w-[236px] h-[44px]">
           <ul className=" flex gap-5 items-center">
             <li>
-            <div className="border-[#C3D4E966] border-[1px] border-solid w-11 h-11 gap-0  rounded-full opacity-80 flex justify-center">
-              <Image
-                src="/icon/menu/heart-filled.svg"
-                alt="Heart Image"
-                width={24}
-                height={24}
-              />
-            </div>
-            </li>
-            <li>
-            <div className="border-[#C3D4E966] border-[1px] border-solid w-11 h-11 gap-0  rounded-full opacity-80 flex justify-center">
-              <Image
-                src="/icon/menu/notification.svg"
-                alt="Notification Image"
-                width={24}
-                height={24}
-              />
-            </div>
+              <div className="border-[#C3D4E966] border-[1px] border-solid w-11 h-11 gap-0  rounded-full opacity-80 flex justify-center">
+                <Image
+                  src="/icon/menu/heart-filled.svg"
+                  alt="Heart Image"
+                  width={24}
+                  height={24}
+                />
+              </div>
             </li>
             <li>
               <div className="border-[#C3D4E966] border-[1px] border-solid w-11 h-11 gap-0  rounded-full opacity-80 flex justify-center">
-              <Image
-                src="/icon/menu/setting-2.svg"
-                alt="Setting Image"
-                width={24}
-                height={24}
-              />
+                <Image
+                  src="/icon/menu/notification.svg"
+                  alt="Notification Image"
+                  width={24}
+                  height={24}
+                />
+              </div>
+            </li>
+            <li>
+              <div className="border-[#C3D4E966] border-[1px] border-solid w-11 h-11 gap-0  rounded-full opacity-80 flex justify-center">
+                <Image
+                  src="/icon/menu/setting-2.svg"
+                  alt="Setting Image"
+                  width={24}
+                  height={24}
+                />
               </div>
             </li>
             <li>

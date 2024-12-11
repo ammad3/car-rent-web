@@ -8,7 +8,8 @@ export default function Footer() {
           <div>
             <h1 className="text-xl font-bold text-blue-500">MORENT</h1>
             <p className="mt-2 text-gray-600 max-w-xs">
-              Our vision is to provide convenience and help increase your sales business.
+              Our vision is to provide convenience and help increase your sales
+              business.
             </p>
           </div>
 
@@ -55,8 +56,12 @@ export default function Footer() {
             ©2022 MORENT. All rights reserved.
           </p>
           <div className="flex space-x-8 mt-4 lg:mt-0">
-            <a href="#" className="text-black text-sm hover:underline">Privacy & Policy</a>
-            <a href="#" className="text-black text-sm hover:underline">Terms & Condition</a>
+            <a href="#" className="text-black text-sm hover:underline">
+              Privacy & Policy
+            </a>
+            <a href="#" className="text-black text-sm hover:underline">
+              Terms & Condition
+            </a>
           </div>
         </div>
       </div>

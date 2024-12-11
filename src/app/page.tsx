@@ -40,11 +40,10 @@ export default function Home() {
         <RadioNav label="Pick-up" />
       </div>
       <div className="flex absolute top-[502px] left-[690px] gap-12 justify-between px-0 py-0 m-0 ">
-      <Button2
-        bgcolor="bg-[#3563E9]"
-        positionLeft=" left-[690px] top-[520px]"
-      />
-
+        <Button2
+          bgcolor="bg-[#3563E9]"
+          positionLeft=" left-[690px] top-[520px]"
+        />
       </div>
       <div className="flex absolute left-[49.625rem] gap-12 justify-between top-[26.5rem]">
         <RadioNav label="Drop-Off" />
