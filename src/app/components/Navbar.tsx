@@ -17,8 +17,8 @@ export default function Navbar() {
             <li>
             <div className="border-[#C3D4E966] border-[1px] border-solid w-11 h-11 gap-0  rounded-full opacity-80 flex justify-center">
               <Image
-                src="/icon/nav/heart-filled.svg"
-                alt=""
+                src="/icon/menu/heart-filled.svg"
+                alt="Heart Image"
                 width={24}
                 height={24}
               />
@@ -27,8 +27,8 @@ export default function Navbar() {
             <li>
             <div className="border-[#C3D4E966] border-[1px] border-solid w-11 h-11 gap-0  rounded-full opacity-80 flex justify-center">
               <Image
-                src="/icon/nav/notification.svg"
-                alt=""
+                src="/icon/menu/notification.svg"
+                alt="Notification Image"
                 width={24}
                 height={24}
               />
@@ -37,8 +37,8 @@ export default function Navbar() {
             <li>
               <div className="border-[#C3D4E966] border-[1px] border-solid w-11 h-11 gap-0  rounded-full opacity-80 flex justify-center">
               <Image
-                src="/icon/nav/setting-2.svg"
-                alt=""
+                src="/icon/menu/setting-2.svg"
+                alt="Setting Image"
                 width={24}
                 height={24}
               />
@@ -48,7 +48,7 @@ export default function Navbar() {
               <Image
                 className="w-[44px] h-[44px] rounded-full"
                 src="/profilepic.png"
-                alt=""
+                alt="Profile Image"
                 width={44}
                 height={44}
               />
