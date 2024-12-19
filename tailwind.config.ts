@@ -8,6 +8,8 @@ export default {
   ],
   theme: {
     extend: {
+      // screens:{'xs': '480px', customize size of screen tought in class.
+      // },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

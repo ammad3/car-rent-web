@@ -13,7 +13,7 @@ const Button = (props: IButtonProps) => {
 
   return (
     <button
-      className={`${bgcolor} ${textColor} ${btnWidth} ${btnHeight} px-5 rounded-[4px] font-semibold text-[16px] leading-6 tracking-[-2%] text-center transition-all duration-200`}
+      className={`${bgcolor} ${textColor} ${btnWidth} ${btnHeight} px-5 rounded-[4px] font-semibold text-xs sm:text-[16px] leading-6 tracking-[-2%] text-center transition-all duration-200`}
     >
       {text}
     </button>
@@ -38,4 +38,16 @@ const Button2 = (props: IButton2Props) => {
   );
 };
 
-export { Button, Button2 };
+const Button3 = (props: IButton2Props) => {
+  const { positionLeft, bgcolor } = props;
+
+  return (
+    <button
+      className={`${bgcolor} ${positionLeft} w-[48px] h-[48px] px-3  rounded-[10px] border border-[#C3D4E966] transition-all duration-200`}
+    >
+      <Image src="/icon/filter.svg" alt="filter image" width={24} height={24} />
+    </button>
+  );
+};
+
+export { Button, Button2, Button3 };
